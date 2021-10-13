@@ -1,130 +1,215 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+   
+/* Variables declared in case I want to change the color scheme -- use compound complementary. */
+:root {
+    --white: rgb(255, 255, 255);
+    --black: rgb(0, 0, 0);
+  
+    --dark3: rgb(8, 8, 8);
+    --light3: rgb(226, 226, 226);
+  
+    --light1: #bab200;
+    --dark1: #878444;
+  
+    --light2: #92bdf5;
+    --dark2: #0082ba;
+  
+    --contrast: #edb918;
+  }
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
+  header {
+    background-color: black;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  header h1 {
+    font-size: 65px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin: 5px 0px 30px 10px;
+    padding: 10px;
+    color: var(--white);
+    position: relative;
+  }
+  
+  header ul {
+    display: flex;
+    position: absolute;
+    top: 170px;
+    right: 5px;
+  }
 
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+  header li a {
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 8px;
+    margin: 12px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: var(--white);
+    text-decoration: underline 4px var(--contrast);
+  }
+  
+ 
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--light3);
+  }
+  
+  main section {
+    margin: 25px;
+  }
+  
+  
+  main section h1 {
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 270px;
+    color: black;
+    margin: 0px 20px 0px 0px;
+    padding: 10px 10px 0px 10px;
+  }
+  
+  
+  #about-me {
+    display: flex;
+  }
+  
+  #about-me p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  #about-me img {
+    width: 400px;
+    height: 300px;
+    margin-right: 20px;
+    background-color: black;
+    padding: 8px;
+  }
+  
+  /* Styling for the section showcasing my work. */
+  
+  #work {
+    display: flex;
+  }
+  #work section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Styling for the text shown overlapping each image. */
+  
+  #work h4 {
+    position: absolute;
+    left: 40px;
+    padding: 10px;
+    background-color: #ffd900;
+    color: var(--black);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline 4px black;
+    border: solid 2px black;
+  }
+  
+  /* Styling for the display of the 'main' project. */
+  
+  #work section .sample-main {
+    position: relative;
+  }
+  
+  #work .sample-main h4 {
+    bottom: 60px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  #work .sample-main img {
+    margin: 20px 20px;
+    border: solid 10px var(--black);
+    width: 640px;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  /* Styling for the display of the 'secondary' projects. */
+  #work section .sample-secondary {
+    position: relative;
+  }
+  
+  #work .sample-secondary h4 {
+    bottom: 50px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  #work .sample-secondary img {
+    margin: 20px 20px;
+    border: solid 6px var(--black);
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Styling for the contact me section. */
+  
+  #contact {
+    display: flex;
+  }
+  #contact ul {
+    padding-left: 10px;
+  }
+  
+  /* Styling for the text for each method of contact. */
+  
+  #contact ul li {
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 6px;
+    display: inline-block;
+    font-weight: 200;
+  }
+  
+  /* Class of no-link-info was needed for pseudo-class of hover on the anchor tags. */
+  
+  #contact ul .no-link-info {
+    padding: 8px;
+    color: var(--white);
+    background-color: var(--dark2);
+    text-decoration: underline 4px var(--light1);
+  }
+  
+  #contact ul .link-info a {
+    padding: 5px;
+    color: black;
+    text-decoration: underline 2px black;
+  }
+  
+  /* Adjusting responsiveness for screen size. */
+  
+  /* @media screen and (max-width: 1440px) {
+    body main #about-me p {
+      background-color: magenta;
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    body main #about-me p {
+      background-color: magenta;
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    body main #about-me p {
+      background-color: magenta;
+      font-size: 12px;
+    }
+  } */
