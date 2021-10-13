@@ -1,41 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <!-- View in Tab -->
-    <title>Professional Portfolio SJohansson</title>
-  </head>
- 
-  
-  <body>
-    <header>
-      <!-- Head shot -->
-      <figure>
-        <img
-          class="photoSJ"
-          src="https://i.postimg.cc/ZWL0s232/SJHshot.jpg' border='0'/>"
-          alt="photo of Stephanie Johansson"
-        />
-      </figure>
-      <section class="StephanieJohansson">
-        <h1>Stephanie Johansson</h1>
-      </section>
-    </header>
 
-    <!-- Introduction paragraph pertaining to background information -->
-    <h2>About Me</h2>
-    <br />
-    <section class="about_me_paragraph">
-      <p>
+          
+          <!DOCTYPE html>
+          <html lang="en">
+            <head>
+              <meta charset="UTF-8" />
+              <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+              
+              <title>Stephanie Johansson: Portfolio</title>
+          
+        
+              <!-- Reset the styling to allow for links to not have the webkit-appearance. -->
+              <link rel="stylesheet" href="assets/css/reset.css" />
+              <link rel="stylesheet" href="assets/css/style.css" />
+            </head>
+          
+        
+        
+            <body>
+              
+              <header>
+                <h1>Stephanie Johansson</h1>
+                <ul>
+                  <li><a href="#about-me">About Me</a></li>
+                  <li><a href="#work">Sample Work</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </header>
+          
+        
+          
+              <main>
+                <section id="about-me">
+                  <h1>About Me</h1>
+                  <img src="https://i.postimg.cc/ZWL0s232/SJHshot.jpg' border='0'/>" alt="Stephanie Johansson" />
+                  <p>
+        
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
         dolorum quidem enim magnam expedita. Soluta excepturi vitae, quo neque
         quis, minima vel qui accusamus nihil quae fugit quod cumque officia eum
@@ -47,58 +46,80 @@
         voluptatem aperiam?
       </p>
     </section>
-
-    <!-- Navigate through my projects in DU Bootcamp -->
-    <nav class="navigation">
-      <h3>My Projects</h3>
-
-      <section class="flex_container">
-        <section class="flex_item1">
-          <!-- <section style = "position: absolute; top: 300px, left; 400px" ></section> -->
-          <a href="https://korbin-sargent.github.io/Dine-In/"
-            ><img
-              alt="Dine In API"
-              src="images/DineIn.jpg"
-              width="300"
-              height="125"
-            />
-          </a>
-        </section>
-        <section class="flex_item2"></section>
-
-          <a href="https://thawing-mesa-73583.herokuapp.com/"
-            ><img
-              alt="Side Swipe"
+    <section id="work">
+      <h1>Projects</h1>
+      <section>
+        <figure class="sample-main">
+          <a
+            href="https://korbin-sargent.github.io/Dine-In/"
+            target="_blank"
+          >
+            <h4>Dine-In</h4>
+            <img
+              src="mages/DineIn.jpg"
+              alt="Dine-InAPIpage"
+          /></a>
+        </figure>
+        <figure class="sample-secondary">
+          <a
+            href="https://thawing-mesa-73583.herokuapp.com/"
+            target="_blank"
+          >
+            <h4>Side Swipe</h4>
+            <img
               src="images/Side Swipe.jpg"
-              width="300"
-              height="125"
-           />
-          </a>
-        </section>
-
-        <section class="flex_item3"></section>
-        <a href="https://7steph7gmailcom.github.io/Code-Quiz/"
-        ><img
-          alt="Code Quiz"
-          src="images/CodeQuiz.png"
-          width="300"
-          height="125"
-       />
-      </a>
-
-        <section class="flex_item">Project 4 not created as of yet</section>
-        <section class="flex_item">Project 5 not created as of yet</section>
-        <section class="flex_item">Project 6 not created as of yet</section>
+              alt="images of cars”
+          /></a>
+        </figure>
+          <figure class="sample-secondary">
+          <a href="https://7steph7gmailcom.github.io/Code-Quiz/" 
+          target="_blank">
+            <h4>Code Quiz</h4>
+            <img
+              src="images/CodeQuiz.png"
+              alt=”code quiz screen shot”
+          /></a>
+        </figure>
       </section>
-    </nav>
-<br>
-    <footer>
-      <h5>Contact Information</h5>
+    </section>
+    <section id="contact">
+      <h1>Contact</h1>
       <ul>
-        <li>Stephanie Johansson</li>
-        <li>(720) 314-5170</li>
-        <li>linkedin/stephanie.johansson-934096213</li>
-      </ul>
-    </footer>
+      
+
+
+        <li class="link-info">
+          <a href="mailto:stephanie.johansson@gmail.com"
+            >stephanie.johansson@gmail.com
+          </a>
+        </li>
+
+
+        <li class="link-info">
+          <a href="https://github.com/7steph7gmailcom " target="_blank">Github</a>
+        </li>
+        <li class="link-info">
+          <a
+            href="https://www.linkedin.com/in/stephaniejohansson-934096213"
+            target="no_blank"
+            >LinkedIn</a
+          >
+        </li>
+        <li class="link-info">
+          <a href="assets/StephanieJohansson-2021.pdf" target="_blank"
+            >Resume</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>
+  
+
+
+
+
+
+
+   
